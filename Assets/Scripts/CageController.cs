@@ -1,9 +1,8 @@
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class CageController : MonoBehaviour
 {
-
-    [SerializeField]
+ [SerializeField]
     Rigidbody2D body;
 
     [SerializeField]
@@ -12,10 +11,6 @@ public class PlayerController : MonoBehaviour
     bool leftPressed;
     bool rightPressed;
 
-
-    [SerializeField]
-    Transform anchor;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         

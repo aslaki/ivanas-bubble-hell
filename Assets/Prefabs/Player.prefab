@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 7083410388506169915}
   - component: {fileID: 4523407577480660049}
   - component: {fileID: 5688015800968240848}
-  - component: {fileID: 123558506535441061}
   - component: {fileID: 3060772078227465148}
   - component: {fileID: 4291980266751479933}
+  - component: {fileID: 9062090927080425649}
   m_Layer: 0
   m_Name: Cage
   m_TagString: Untagged
@@ -118,21 +118,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &123558506535441061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3081061297375093081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fcb6ee8842426a4098308ad8a42c826, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  body: {fileID: 5688015800968240848}
-  force: 5
-  anchor: {fileID: 864733711290208786}
 --- !u!61 &3060772078227465148
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -205,6 +190,23 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 0
+--- !u!114 &9062090927080425649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3081061297375093081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b6733694d2eef44a9bc7f6c87c2fe7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  body: {fileID: 5688015800968240848}
+  force: 0.5
+  cooldown: 0.1
+  timer: 0
+  ison: 0
 --- !u!1 &3317041471942404271
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,7 +354,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -530,7 +532,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -545,6 +547,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1313193589382469077}
+  - component: {fileID: 2168141389703593138}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -568,6 +571,20 @@ Transform:
   - {fileID: 3383302452371008296}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2168141389703593138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4108511307755101019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6998f99bf1e11bd46a834129c9062d17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 100
 --- !u!1 &5584886585985207349
 GameObject:
   m_ObjectHideFlags: 0
