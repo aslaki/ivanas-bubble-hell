@@ -39,11 +39,6 @@ public class BubbleSpawner : MonoBehaviour
     }
 
  
-
-
-
-    
-
     private void SpawnBubble()
     {
         Instantiate(bubbles[0], spawnPoints[0].transform);
