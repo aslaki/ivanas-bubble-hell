@@ -23,8 +23,6 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        //Calculate vector from the anchor 
-        var direction = anchor.position - transform.position;
         if(leftPressed)
         {
             body.AddForce(Vector2.left * force);
