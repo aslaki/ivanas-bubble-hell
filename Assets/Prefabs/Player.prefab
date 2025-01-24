@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5688015800968240848}
   - component: {fileID: 3060772078227465148}
   - component: {fileID: 4291980266751479933}
-  - component: {fileID: 9062090927080425649}
+  - component: {fileID: 1574319532897551229}
   m_Layer: 0
   m_Name: Cage
   m_TagString: Untagged
@@ -190,7 +190,7 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 0
---- !u!114 &9062090927080425649
+--- !u!114 &1574319532897551229
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -203,8 +203,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 5688015800968240848}
-  force: 0.5
-  cooldown: 0.1
+  force: 50
+  cooldown: 0.5
   timer: 0
   ison: 0
 --- !u!1 &3317041471942404271
