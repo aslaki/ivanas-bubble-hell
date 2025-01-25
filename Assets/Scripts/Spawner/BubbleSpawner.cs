@@ -3,6 +3,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using System;
+using System.Collections;
 
 public class BubbleSpawner : MonoBehaviour
 {
@@ -35,13 +36,25 @@ public class BubbleSpawner : MonoBehaviour
             T value = spawnPoints[rnd];
             spawnPoints[rnd] = spawnPoints[i];
             spawnPoints[i] = value;
-        }       
+        }  
+        StartCoroutine(LaunchSpawningSequence());
+    }
+
+    private IEnumerator LaunchSpawningSequence()
+    {
+        for (int i = 0; i < spawnPoints.Count; i++ )
+        {
+            SpawnBubble(spawnPoints[i].transform);
+            yield return new WaitForSeconds(1);
+        }
+
+        SpawningStart();
     }
 
  
-    private void SpawnBubble()
+    private void SpawnBubble(Transform spawnPoint)
     {
-        Instantiate(bubbles[0], spawnPoints[0].transform);
+        Instantiate(bubbles[0], spawnPoint.transform);
     }
 
    
