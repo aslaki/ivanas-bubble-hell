@@ -63,10 +63,26 @@ public class BubbleSpawner : MonoBehaviour
  
     private void SpawnBubble(Transform spawnPoint)
     {
-        int randomValue;
-        randomValue = UnityEngine.Random.Range(0, bubbles.Length);
-        Instantiate(bubbles[randomValue], spawnPoint.transform.position, Quaternion.identity);
-        
+        int randomType;
+        int randomMovement;
+        float randomSpeed;
+
+        randomType = UnityEngine.Random.Range(0, bubbles.Length);
+       var bubble = Instantiate(bubbles[randomType], spawnPoint.transform.position, Quaternion.identity);
+
+        randomMovement = UnityEngine.Random.Range(0, 2);
+        randomSpeed = UnityEngine.Random.Range(2, 5);
+
+        if(randomMovement == 1)
+        {
+            bubble.AddComponent<BubbleWiggle>();  
+            bubble.GetComponent<BubbleWiggle>().speed = randomSpeed;    
+        }
+        else
+        {
+            bubble.AddComponent<BubbleMover>();
+            bubble.GetComponent<BubbleMover>().speed = randomSpeed;
+        }
     }
 
    

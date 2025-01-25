@@ -98,7 +98,6 @@ GameObject:
   - component: {fileID: 4787454417639593712}
   - component: {fileID: 65752353463152721}
   - component: {fileID: -6654884596033007037}
-  - component: {fileID: -8696750694166083461}
   m_Layer: 0
   m_Name: BubbleWiggle
   m_TagString: Untagged
@@ -185,16 +184,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-8696750694166083461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4450005278015502754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c284a766b3803eb47a348b737a579def, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
