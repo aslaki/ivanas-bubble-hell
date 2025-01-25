@@ -42,7 +42,7 @@ public class BubbleSpawner : MonoBehaviour
 
         GameManager.Instance.OnCollectRune += OnCollectRune;
 
-        SpawningStart();
+        StartCoroutine(StartDelay());
     }
 
     public void SpawningStart()
@@ -129,6 +129,12 @@ public class BubbleSpawner : MonoBehaviour
     public void OnDestroy()
     {
         GameManager.Instance.OnCollectRune -= OnCollectRune;
+    }
+
+    private IEnumerator StartDelay()
+    {
+        yield return new WaitForSeconds(3);
+        SpawningStart();
     }
 
    
