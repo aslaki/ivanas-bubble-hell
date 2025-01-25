@@ -61,7 +61,10 @@ public class BubbleSpawner : MonoBehaviour
  
     private void SpawnBubble(Transform spawnPoint)
     {
-       Instantiate(bubbles[0], spawnPoint.position, Quaternion.identity);
+        int randomValue;
+        randomValue = UnityEngine.Random.Range(0, bubbles.Length);
+        Instantiate(bubbles[randomValue], spawnPoint.transform.position, Quaternion.identity);
+        
     }
 
    
