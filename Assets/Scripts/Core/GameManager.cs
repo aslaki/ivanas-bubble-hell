@@ -4,6 +4,7 @@ using UnityEngine.Android;
 
 public class GameManager : MonoBehaviour
 {
+    public enum Rune { Fire, Water, Earth };
     private static GameManager gameManager;
 
     public static GameManager Instance
@@ -18,6 +19,10 @@ public class GameManager : MonoBehaviour
 
     // Parameters are current health value and maximum health value
     public Action<int, int> OnPlayerHealthChange;
+
+    public Action<Rune> OnCollectRune;
+
+    public Action OnRunesCollectionComplete;
 
     public void Awake() {
         if(gameManager != null) {
