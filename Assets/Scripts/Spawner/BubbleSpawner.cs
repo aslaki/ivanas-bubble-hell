@@ -15,6 +15,13 @@ public class BubbleSpawner : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        spawnPoints = new List<GameObject>();   
+        //Fetch all spawnpoints (child objects) of the spawner
+        foreach (Transform child in transform)
+        {
+            spawnPoints.Add(child.gameObject);
+        }
+
         SpawningStart();
     }
 
@@ -28,6 +35,7 @@ public class BubbleSpawner : MonoBehaviour
         int pointCount = spawnPoints.Count;
 
         System.Random random = new System.Random();
+        System.Random r = new System.Random();
 
         for(int i = pointCount - 1; i > 1; i--)
         {
@@ -54,7 +62,7 @@ public class BubbleSpawner : MonoBehaviour
  
     private void SpawnBubble(Transform spawnPoint)
     {
-        Instantiate(bubbles[0], spawnPoint.transform);
+       Instantiate(bubbles[0], spawnPoint.position, Quaternion.identity);
     }
 
    
