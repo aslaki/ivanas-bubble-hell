@@ -11,6 +11,8 @@ public class CageController : MonoBehaviour
     bool leftPressed;
     bool rightPressed;
 
+    public bool disableInput;
+
     void Start()
     {
         
@@ -32,6 +34,10 @@ public class CageController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(disableInput)
+        {
+            return;
+        }
         leftPressed = Input.GetKey(KeyCode.LeftArrow);
         rightPressed = Input.GetKey(KeyCode.RightArrow);
     }
