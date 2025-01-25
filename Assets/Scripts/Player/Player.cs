@@ -24,11 +24,14 @@ public class Player : MonoBehaviour
 
     Vector2 startPosition;
 
+    private PlayerAudio playerAudio;
+
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         GameManager.Instance.OnPlayerHealthChange?.Invoke(currentHealth, maxHealth);
+        playerAudio = FindObjectOfType<PlayerAudio>();
         startPosition = cageBody.position;
     }
 
@@ -56,6 +59,8 @@ public class Player : MonoBehaviour
     {
         collectedRunes.Add(rune);
         GameManager.Instance.OnCollectRune?.Invoke(rune, collectedRunes.ToArray());
+        playerAudio.LockSoundEffects(); 
+
         if(collectedRunes.Count == numberOfRunesRequired)
         {
             StartCoroutine(PlayWinSequence());
