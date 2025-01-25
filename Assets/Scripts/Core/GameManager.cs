@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
     public enum Rune { Fire, Water, Earth };
 
     public enum Menu { GameOverMenu, WinMenu };
+
+    public enum Sequence { Win, Lose };
+
     private static GameManager gameManager;
 
     public static GameManager Instance
@@ -29,6 +32,10 @@ public class GameManager : MonoBehaviour
     public Action<Menu> OnMenuOpen;
 
     public Action<Menu> OnMenuClose;
+
+    public Action<Sequence> OnSequenceStart;
+
+    public Action<Sequence> OnSequenceEnd;
 
     public Action OnRunesCollectionComplete;
 
