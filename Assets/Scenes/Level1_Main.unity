@@ -192,7 +192,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2168141389703593138, guid: dc8c757e335959a45a5764f1871f4696, type: 3}
       propertyPath: currentHealth
-      value: 20
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2396109524679058571, guid: dc8c757e335959a45a5764f1871f4696, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -649,6 +649,10 @@ PrefabInstance:
     - target: {fileID: 3696220273458046052, guid: bc76f3bd58968394bb1005f267c0d3c0, type: 3}
       propertyPath: m_Name
       value: SettingsObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 5459876574956239665, guid: bc76f3bd58968394bb1005f267c0d3c0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5596524005260540795, guid: bc76f3bd58968394bb1005f267c0d3c0, type: 3}
       propertyPath: m_AnchorMax.x
