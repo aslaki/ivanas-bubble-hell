@@ -16,6 +16,9 @@ public class GameManager : MonoBehaviour
 
     public Action OnPlayerDeath;
 
+    public float musicVolume;
+    public float soundVolume;
+
     public void Awake() {
         if(gameManager != null) {
             Destroy(gameObject);
