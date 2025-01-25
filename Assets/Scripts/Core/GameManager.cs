@@ -16,6 +16,9 @@ public class GameManager : MonoBehaviour
 
     public Action OnPlayerDeath;
 
+    // Parameters are current health value and maximum health value
+    public Action<int, int> OnPlayerHealthChange;
+
     public void Awake() {
         if(gameManager != null) {
             Destroy(gameObject);

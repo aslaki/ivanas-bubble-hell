@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        GameManager.Instance.OnPlayerHealthChange?.Invoke(currentHealth, maxHealth);
     }
 
     // Update is called once per frame
@@ -22,10 +22,12 @@ public class Player : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        GameManager.Instance.OnPlayerHealthChange?.Invoke(currentHealth, maxHealth);
         if(currentHealth <= 0)
         {
             Die();
         }
+        
     }
 
     void Die()
