@@ -26,6 +26,16 @@ public class PauseMenu : MonoBehaviour
         TogglePause();
     }
 
+    public void OnExitToMenuButton()
+    {
+        GameManager.Instance.ExitToMenu();
+    }
+
+    public void OnQuitButton()
+    {
+        GameManager.Instance.Quit();
+    }
+
     private void TogglePause() {
         if(Time.timeScale == 0)
         {
