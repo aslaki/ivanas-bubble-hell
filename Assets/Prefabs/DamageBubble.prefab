@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3321781538660849865
+--- !u!1 &1502277878847987978
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,39 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7453576458602588579}
-  - component: {fileID: 8937859824588710836}
-  - component: {fileID: 411337870358513559}
+  - component: {fileID: 1628533827573527042}
+  - component: {fileID: -3249827075587805425}
+  - component: {fileID: -7401713415960870203}
   m_Layer: 0
-  m_Name: BubbleSigil
+  m_Name: DamageBubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7453576458602588579
+--- !u!4 &1628533827573527042
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3321781538660849865}
+  m_GameObject: {fileID: 1502277878847987978}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1070833012654099295}
+  - {fileID: 8586564345441784313}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &8937859824588710836
+--- !u!58 &-3249827075587805425
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3321781538660849865}
+  m_GameObject: {fileID: 1502277878847987978}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -68,16 +68,16 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0025333464, y: 0}
-  m_Radius: 0.19347951
---- !u!50 &411337870358513559
+  m_Offset: {x: -0.001065284, y: 0}
+  m_Radius: 0.19423762
+--- !u!50 &-7401713415960870203
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3321781538660849865}
+  m_GameObject: {fileID: 1502277878847987978}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -97,7 +97,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1 &6490876664822993840
+--- !u!1 &9085374144495172679
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,8 +105,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1070833012654099295}
-  - component: {fileID: 7972149045156771110}
+  - component: {fileID: 8586564345441784313}
+  - component: {fileID: 3589550577684975}
   m_Layer: 0
   m_Name: sprite
   m_TagString: Untagged
@@ -114,28 +114,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1070833012654099295
+--- !u!4 &8586564345441784313
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6490876664822993840}
+  m_GameObject: {fileID: 9085374144495172679}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.39341313, y: 0.41435793, z: 0.5818}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7453576458602588579}
+  m_Father: {fileID: 1628533827573527042}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &7972149045156771110
+--- !u!212 &3589550577684975
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6490876664822993840}
+  m_GameObject: {fileID: 9085374144495172679}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -174,7 +174,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.4846524, g: 0.91194963, b: 0.61665535, a: 1}
+  m_Color: {r: 0.88235295, g: 0.8611182, b: 0.49019608, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
