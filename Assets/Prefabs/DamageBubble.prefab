@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1628533827573527042}
   - component: {fileID: -3249827075587805425}
   - component: {fileID: -7401713415960870203}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DamageBubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8586564345441784313}
   - component: {fileID: 3589550577684975}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

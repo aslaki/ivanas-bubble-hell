@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7825842275476806764}
   - component: {fileID: 3945952892168160513}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 4787454417639593712}
   - component: {fileID: 65752353463152721}
   - component: {fileID: -6654884596033007037}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PushBubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}

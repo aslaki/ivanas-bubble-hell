@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 4964941224135156045}
   - component: {fileID: 7803067445645038843}
   - component: {fileID: 2598672259859256800}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chain0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -316,7 +316,7 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -395,7 +395,7 @@ GameObject:
   - component: {fileID: 4284013872243790696}
   - component: {fileID: 5068547776753946883}
   - component: {fileID: 7325899190279285041}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Anchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -494,7 +494,7 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -595,7 +595,7 @@ GameObject:
   - component: {fileID: 809877659155735701}
   - component: {fileID: 4548500218658038073}
   - component: {fileID: 8116004082225340475}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chain6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -694,7 +694,7 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -774,7 +774,7 @@ GameObject:
   - component: {fileID: 6470091822599330701}
   - component: {fileID: 2915006453982783338}
   - component: {fileID: 7335267684602726687}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chain4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -873,7 +873,7 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -993,7 +993,7 @@ GameObject:
   - component: {fileID: 2186235546591737870}
   - component: {fileID: 2419898066592418668}
   - component: {fileID: 5591682436388838137}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chain3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1092,7 +1092,7 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -1172,7 +1172,7 @@ GameObject:
   - component: {fileID: 3828081850233018959}
   - component: {fileID: 8443740534218257274}
   - component: {fileID: 6346033375319759572}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chain1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1271,7 +1271,7 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -1351,7 +1351,7 @@ GameObject:
   - component: {fileID: 7225142755599755978}
   - component: {fileID: 2396109524679058571}
   - component: {fileID: 2811083469021795157}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chain2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1450,7 +1450,7 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -1530,7 +1530,7 @@ GameObject:
   - component: {fileID: 4127964218271566661}
   - component: {fileID: 5811820131739181630}
   - component: {fileID: 6967196316264040658}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chain5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1629,7 +1629,7 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
