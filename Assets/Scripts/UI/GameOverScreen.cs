@@ -15,7 +15,6 @@ public class GameOverScreen : MonoBehaviour
 
     private void OnGameOver()
     {
-        Debug.Log("Game Over");
         Time.timeScale = 0;
         gameOverScreen.SetActive(true);
     }
