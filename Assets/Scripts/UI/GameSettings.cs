@@ -11,6 +11,8 @@ public class GameSettings : MonoBehaviour
 
     [SerializeField] private AudioMixer audioMixer;
 
+    public bool isSettingsActive;
+
     private GameManager gameManager;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -21,14 +23,24 @@ public class GameSettings : MonoBehaviour
         settingsCanvas.SetActive(false);
     }
 
+    private void Update()
+    {
+        if (isSettingsActive && Input.GetKeyUp(KeyCode.Escape))
+        {
+            CloseSettings();
+        }
+    }
+
     public void OpenSettings()
     {
         settingsCanvas.SetActive(true);
+        isSettingsActive= true; 
     }
 
     public void CloseSettings()
     {
-        settingsCanvas.SetActive(false);    
+        settingsCanvas.SetActive(false);
+        isSettingsActive = false;
     }
 
     public void SetMusicVolume(float musicVolume)
