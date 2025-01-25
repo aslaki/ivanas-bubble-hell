@@ -35,7 +35,6 @@ public class BubbleSpawner : MonoBehaviour
         int pointCount = spawnPoints.Count;
 
         System.Random random = new System.Random();
-        System.Random r = new System.Random();
 
         for(int i = pointCount - 1; i > 1; i--)
         {
