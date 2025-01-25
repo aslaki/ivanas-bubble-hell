@@ -6,6 +6,8 @@ using UnityEngine.Android;
 public class GameManager : MonoBehaviour
 {
     public enum Rune { Fire, Water, Earth };
+
+    public enum Menu { GameOverMenu, WinMenu };
     private static GameManager gameManager;
 
     public static GameManager Instance
@@ -23,6 +25,10 @@ public class GameManager : MonoBehaviour
 
     // Parameters are the rune that was collected and the list of all runes collected so far
     public Action<Rune, Rune[]> OnCollectRune;
+
+    public Action<Menu> OnMenuOpen;
+
+    public Action<Menu> OnMenuClose;
 
     public Action OnRunesCollectionComplete;
 

@@ -17,12 +17,7 @@ public class GameOverScreen : MonoBehaviour
     {
         Time.timeScale = 0;
         gameOverScreen.SetActive(true);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        GameManager.Instance.OnMenuOpen?.Invoke(GameManager.Menu.GameOverMenu);
     }
 
     public void Restart()
@@ -30,6 +25,7 @@ public class GameOverScreen : MonoBehaviour
         Time.timeScale = 1;
         gameOverScreen.SetActive(false);
         GameManager.Instance.Restart();
+        GameManager.Instance.OnMenuClose?.Invoke(GameManager.Menu.GameOverMenu);
     }
 
     public void Quit()
@@ -37,6 +33,7 @@ public class GameOverScreen : MonoBehaviour
         Time.timeScale = 1;
         gameOverScreen.SetActive(false);
         GameManager.Instance.Quit();
+        GameManager.Instance.OnMenuClose?.Invoke(GameManager.Menu.GameOverMenu);
     }
 
     private void OnDestroy()

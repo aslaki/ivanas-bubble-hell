@@ -16,6 +16,7 @@ public class WinScreen : MonoBehaviour
     {
         Time.timeScale = 0;
         winScreen.SetActive(true);
+        GameManager.Instance.OnMenuOpen?.Invoke(GameManager.Menu.WinMenu);
     }
 
     // Update is called once per frame
@@ -28,6 +29,7 @@ public class WinScreen : MonoBehaviour
     {
         Time.timeScale = 1;
         GameManager.Instance.Quit();
+        GameManager.Instance.OnMenuClose?.Invoke(GameManager.Menu.WinMenu);
     }
 
     void Destroy()

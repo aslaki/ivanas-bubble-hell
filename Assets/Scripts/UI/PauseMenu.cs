@@ -9,16 +9,20 @@ public class PauseMenu : MonoBehaviour
 
     [SerializeField] private GameSettings settings;
 
+    private bool canOpenMenu = true;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         pauseMenu.SetActive(false);
+        GameManager.Instance.OnMenuOpen += OnMenuOpen;
+        GameManager.Instance.OnMenuClose += OnMenuClose;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(!settings.isSettingsActive && Input.GetKeyDown(KeyCode.Escape))
+        if(canOpenMenu && !settings.isSettingsActive && Input.GetKeyDown(KeyCode.Escape))
         {
             TogglePause();
         }
@@ -50,6 +54,22 @@ public class PauseMenu : MonoBehaviour
             Time.timeScale = 0;
             pauseMenu.SetActive(true);
         }
+    }
+
+    private void OnMenuOpen(GameManager.Menu menu)
+    {
+        canOpenMenu = false;
+    }
+
+    private void OnMenuClose(GameManager.Menu menu)
+    {
+        canOpenMenu = true;
+    }
+
+    private void OnDestroy()
+    {
+        GameManager.Instance.OnMenuOpen -= OnMenuOpen;
+        GameManager.Instance.OnMenuClose -= OnMenuClose;
     }
 
 }
