@@ -15,6 +15,7 @@ public class GameOverScreen : MonoBehaviour
 
     private void OnGameOver()
     {
+        Time.timeScale = 0;
         gameOverScreen.SetActive(true);
     }
 
@@ -26,12 +27,14 @@ public class GameOverScreen : MonoBehaviour
 
     public void Restart()
     {
+        Time.timeScale = 1;
         gameOverScreen.SetActive(false);
         GameManager.Instance.Restart();
     }
 
     public void Quit()
     {
+        Time.timeScale = 1;
         gameOverScreen.SetActive(false);
         GameManager.Instance.Quit();
     }

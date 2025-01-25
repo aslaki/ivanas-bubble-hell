@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using System;
 using System.Collections;
+using UnityEngine.Serialization;
 
 public class BubbleSpawner : MonoBehaviour
 {
@@ -12,11 +13,18 @@ public class BubbleSpawner : MonoBehaviour
 
     [SerializeField] private GameObject[] bubbles;
 
-    public float firerate = 1;
+    [FormerlySerializedAs("firerate")]
+    public float fireCooldown = 1;
+
+    [SerializeField]
+    float currentFireCooldown;
+
+    public float cooldownTimeModifier = 0.2f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        currentFireCooldown = fireCooldown;
         spawnPoints = new List<GameObject>();   
         //Fetch all spawnpoints (child objects) of the spawner
         foreach (Transform child in transform)
@@ -54,7 +62,7 @@ public class BubbleSpawner : MonoBehaviour
         for (int i = 0; i < spawnPoints.Count; i++ )
         {
             SpawnBubble(spawnPoints[i].transform);
-            yield return new WaitForSeconds(firerate);
+            yield return new WaitForSeconds(currentFireCooldown);
         }
 
         SpawningStart();
@@ -68,7 +76,7 @@ public class BubbleSpawner : MonoBehaviour
         float randomSpeed;
 
         randomType = UnityEngine.Random.Range(0, bubbles.Length);
-       var bubble = Instantiate(bubbles[randomType], spawnPoint.transform.position, Quaternion.identity);
+        var bubble = Instantiate(bubbles[randomType], spawnPoint.transform.position, Quaternion.identity);
 
         randomMovement = UnityEngine.Random.Range(0, 2);
         randomSpeed = UnityEngine.Random.Range(2, 5);
@@ -83,6 +91,12 @@ public class BubbleSpawner : MonoBehaviour
             bubble.AddComponent<BubbleMover>();
             bubble.GetComponent<BubbleMover>().speed = randomSpeed;
         }
+    }
+
+    public void FixedUpdate()
+    {
+        currentFireCooldown = Mathf.Clamp(currentFireCooldown - (Time.deltaTime * cooldownTimeModifier),
+         0.01f, fireCooldown);
     }
 
    

@@ -179,6 +179,9 @@ MonoBehaviour:
   - {fileID: 0}
   bubbles:
   - {fileID: 1502277878847987978, guid: ab11ac74f2ffb0a4fbf1471f411ac963, type: 3}
+  fireCooldown: 1
+  currentFireCooldown: 0
+  cooldownTimeModifier: 0.005
 --- !u!1001 &1140579314830347386
 PrefabInstance:
   m_ObjectHideFlags: 0
