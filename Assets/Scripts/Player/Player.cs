@@ -30,6 +30,7 @@ public class Player : MonoBehaviour
 
     void Die()
     {
-       GameManager.Instance.OnPlayerDeath?.Invoke();
+        Debug.Log("Player died");
+        GameManager.Instance.OnPlayerDeath?.Invoke();
     }
 }

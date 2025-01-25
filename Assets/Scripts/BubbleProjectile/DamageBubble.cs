@@ -4,9 +4,6 @@ public class DamageBubble : MonoBehaviour
 {
 
     [SerializeField]
-    Player player;
-
-    [SerializeField]
     int damage;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -24,6 +21,7 @@ public class DamageBubble : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
+            Player player = collision.gameObject.GetComponentInParent<Player>();
             player.TakeDamage(damage);
         }
     }
