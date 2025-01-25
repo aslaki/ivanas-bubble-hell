@@ -21,6 +21,8 @@ public class GameSettings : MonoBehaviour
         gameManager = FindObjectOfType<GameManager>();
 
         settingsCanvas.SetActive(false);
+        audioMixer.SetFloat("MusicVolume", gameManager.musicVolume);
+        audioMixer.SetFloat("SoundVolume", gameManager.soundVolume);
     }
 
     private void Update()
