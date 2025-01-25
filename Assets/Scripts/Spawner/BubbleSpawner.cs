@@ -12,6 +12,8 @@ public class BubbleSpawner : MonoBehaviour
 
     [SerializeField] private GameObject[] bubbles;
 
+    public float firerate = 1;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -52,7 +54,7 @@ public class BubbleSpawner : MonoBehaviour
         for (int i = 0; i < spawnPoints.Count; i++ )
         {
             SpawnBubble(spawnPoints[i].transform);
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(firerate);
         }
 
         SpawningStart();
