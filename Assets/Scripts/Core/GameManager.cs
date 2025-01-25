@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.Android;
 
+[DefaultExecutionOrder(-99999)]
 public class GameManager : MonoBehaviour
 {
     public enum Rune { Fire, Water, Earth };
@@ -20,7 +21,8 @@ public class GameManager : MonoBehaviour
     // Parameters are current health value and maximum health value
     public Action<int, int> OnPlayerHealthChange;
 
-    public Action<Rune> OnCollectRune;
+    // Parameters are the rune that was collected and the list of all runes collected so far
+    public Action<Rune, Rune[]> OnCollectRune;
 
     public Action OnRunesCollectionComplete;
 

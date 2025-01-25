@@ -39,4 +39,9 @@ public class GameOverScreen : MonoBehaviour
         GameManager.Instance.Quit();
     }
 
+    private void OnDestroy()
+    {
+        GameManager.Instance.OnPlayerDeath -= OnGameOver;
+    }
+
 }

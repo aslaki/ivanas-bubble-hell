@@ -30,4 +30,9 @@ public class HealthBar : MonoBehaviour
     {
         healthBarFill.fillAmount = fillAmountPercetage;
     }
+
+    private void OnDestroy()
+    {
+        GameManager.Instance.OnPlayerHealthChange -= OnPlayerHealthChange;
+    }
 }

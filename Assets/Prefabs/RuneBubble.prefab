@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8937859824588710836}
   - component: {fileID: 411337870358513559}
   - component: {fileID: -656005724206373956}
+  - component: {fileID: 3301897779038411378}
   m_Layer: 7
   m_Name: RuneBubble
   m_TagString: Untagged
@@ -110,6 +111,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 138d942745858314c903c23de3be628b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3301897779038411378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3321781538660849865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2d4f369a2f35054990b600f8b0c9546, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rune: 0
 --- !u!1 &6490876664822993840
 GameObject:
   m_ObjectHideFlags: 0

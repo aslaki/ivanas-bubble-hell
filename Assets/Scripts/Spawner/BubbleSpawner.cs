@@ -5,6 +5,8 @@ using Unity.VisualScripting;
 using System;
 using System.Collections;
 using UnityEngine.Serialization;
+using static GameManager;
+using System.Linq;
 
 public class BubbleSpawner : MonoBehaviour
 {
@@ -13,6 +15,8 @@ public class BubbleSpawner : MonoBehaviour
 
     [SerializeField] private GameObject[] bubbles;
 
+    [SerializeField] private GameObject[] runeBubbles;
+
     [FormerlySerializedAs("firerate")]
     public float fireCooldown = 1;
 
@@ -20,6 +24,10 @@ public class BubbleSpawner : MonoBehaviour
     float currentFireCooldown;
 
     public float cooldownTimeModifier = 0.2f;
+
+    public float runeBubbleSpawnRate = 0.1f;
+
+    public Rune[] collectedRunes = new Rune[0];
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -32,12 +40,19 @@ public class BubbleSpawner : MonoBehaviour
             spawnPoints.Add(child.gameObject);
         }
 
+        GameManager.Instance.OnCollectRune += OnCollectRune;
+
         SpawningStart();
     }
 
     public void SpawningStart()
     {
         RandomizeSpawnpoints(spawnPoints);
+    }
+
+    public void OnCollectRune(Rune rune, Rune[] collectedRunes)
+    {
+        this.collectedRunes = collectedRunes;
     }
 
     private void RandomizeSpawnpoints<T>(IList<T> spawnPoints)
@@ -75,8 +90,20 @@ public class BubbleSpawner : MonoBehaviour
         int randomMovement;
         float randomSpeed;
 
-        randomType = UnityEngine.Random.Range(0, bubbles.Length);
-        var bubble = Instantiate(bubbles[randomType], spawnPoint.transform.position, Quaternion.identity);
+        GameObject bubble;
+
+        // Rune bubbles custom spawn rate
+        if (UnityEngine.Random.Range(0, 100) < runeBubbleSpawnRate * 100)
+        {
+            randomType = UnityEngine.Random.Range(0, runeBubbles.Length);
+            bubble = Instantiate(runeBubbles[randomType], spawnPoint.transform.position, Quaternion.identity);
+            var allRunes = Enum.GetValues(typeof(Rune));
+            var notCollectedRunes = allRunes.Cast<Rune>().Except(collectedRunes);
+            bubble.GetComponent<RuneBubble>().rune = notCollectedRunes.ElementAt(UnityEngine.Random.Range(0, notCollectedRunes.Count()));
+        } else {
+            randomType = UnityEngine.Random.Range(0, bubbles.Length);
+            bubble = Instantiate(bubbles[randomType], spawnPoint.transform.position, Quaternion.identity);
+        }
 
         randomMovement = UnityEngine.Random.Range(0, 2);
         randomSpeed = UnityEngine.Random.Range(2, 5);
@@ -97,6 +124,11 @@ public class BubbleSpawner : MonoBehaviour
     {
         currentFireCooldown = Mathf.Clamp(currentFireCooldown - (Time.deltaTime * cooldownTimeModifier),
          0.01f, fireCooldown);
+    }
+
+    public void OnDestroy()
+    {
+        GameManager.Instance.OnCollectRune -= OnCollectRune;
     }
 
    

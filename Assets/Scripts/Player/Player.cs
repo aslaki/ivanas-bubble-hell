@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using static GameManager;
 
@@ -39,7 +40,7 @@ public class Player : MonoBehaviour
     public void OnCollectRune(Rune rune)
     {
         collectedRunes.Add(rune);
-        GameManager.Instance.OnCollectRune?.Invoke(rune);
+        GameManager.Instance.OnCollectRune?.Invoke(rune, collectedRunes.ToArray());
         if(collectedRunes.Count == numberOfRunesRequired)
         {
             GameManager.Instance.OnRunesCollectionComplete?.Invoke();

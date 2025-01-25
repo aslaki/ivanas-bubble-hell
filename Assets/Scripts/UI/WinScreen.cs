@@ -29,4 +29,9 @@ public class WinScreen : MonoBehaviour
         Time.timeScale = 1;
         GameManager.Instance.Quit();
     }
+
+    void Destroy()
+    {
+        GameManager.Instance.OnRunesCollectionComplete -= OnWin;
+    }
 }
