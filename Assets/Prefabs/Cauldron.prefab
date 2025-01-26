@@ -190,9 +190,11 @@ MonoBehaviour:
   - {fileID: 3321781538660849865, guid: 620667a7b0a0f1b49950197ac6665bdc, type: 3}
   fireCooldown: 1
   currentFireCooldown: 0
-  cooldownTimeModifier: 0.005
+  cooldownTimeModifier: 0.0005
   runeBubbleSpawnRate: 0.1
   collectedRunes: 
+  runeBubbleStartSpawnInSec: 40
+  gamePlayTimer: 0
 --- !u!1001 &1140579314830347386
 PrefabInstance:
   m_ObjectHideFlags: 0
