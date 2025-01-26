@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sigilbubble2_0: -3564211234415272750
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
