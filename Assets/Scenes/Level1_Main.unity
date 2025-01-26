@@ -244,7 +244,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7309655010812999488, guid: dc8c757e335959a45a5764f1871f4696, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8443740534218257274, guid: dc8c757e335959a45a5764f1871f4696, type: 3}
       propertyPath: m_ConnectedAnchor.x
