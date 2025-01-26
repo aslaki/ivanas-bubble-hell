@@ -20,6 +20,9 @@ public class Player : MonoBehaviour
     CageController cageController;
 
     [SerializeField]
+    GameObject nicCage;
+
+    [SerializeField]
     BoxCollider2D startZoneCollider;
 
     Vector2 startPosition;
@@ -183,6 +186,16 @@ public class Player : MonoBehaviour
 
     void Die()
     {
+        //Play Death Sequence
+        cageBody.excludeLayers = 1 << LayerMask.NameToLayer("Bubbles");
+        cageController.disableInput = true;
+        nicCage.GetComponent<HingeJoint2D>().enabled = false;
+        StartCoroutine(DeathDelay());
+    }
+
+    System.Collections.IEnumerator DeathDelay()
+    {
+        yield return new WaitForSeconds(3.0f);
         GameManager.Instance.OnPlayerDeath?.Invoke();
     }
 }
