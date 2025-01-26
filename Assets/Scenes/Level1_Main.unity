@@ -321,7 +321,7 @@ Transform:
   m_GameObject: {fileID: 126135666}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0016999245, y: -0.014199972, z: 0}
+  m_LocalPosition: {x: -0.0016999245, y: -1.88, z: 0}
   m_LocalScale: {x: 0.8085757, y: 0.8085757, z: 0.8085757}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1124,8 +1124,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 8442548732429750021, guid: e73dffc659a54fa438bd051ed19b9421, type: 2}
-  m_audioClip: {fileID: 8300000, guid: e8ba722cfd1e6d042a01067ef56f2539, type: 3}
-  m_Resource: {fileID: 8300000, guid: e8ba722cfd1e6d042a01067ef56f2539, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d36e3b3d0f9ebfb469e06fa73131f3ff, type: 3}
+  m_Resource: {fileID: 8300000, guid: d36e3b3d0f9ebfb469e06fa73131f3ff, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1914,6 +1914,18 @@ PrefabInstance:
     - target: {fileID: 5816549077924300456, guid: cb94ea3a0e642f64997444fa05cebdad, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6171814683717420900, guid: cb94ea3a0e642f64997444fa05cebdad, type: 3}
+      propertyPath: m_Color.b
+      value: 0.29492247
+      objectReference: {fileID: 0}
+    - target: {fileID: 6171814683717420900, guid: cb94ea3a0e642f64997444fa05cebdad, type: 3}
+      propertyPath: m_Color.g
+      value: 0.34591186
+      objectReference: {fileID: 0}
+    - target: {fileID: 6171814683717420900, guid: cb94ea3a0e642f64997444fa05cebdad, type: 3}
+      propertyPath: m_Color.r
+      value: 0.26432884
       objectReference: {fileID: 0}
     - target: {fileID: 6676954488109671707, guid: cb94ea3a0e642f64997444fa05cebdad, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
