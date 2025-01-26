@@ -91,6 +91,7 @@ public class BubbleSpawner : MonoBehaviour
         float randomSpeed;
 
         GameObject bubble;
+        
 
         // Rune bubbles custom spawn rate
         if (UnityEngine.Random.Range(0, 100) < runeBubbleSpawnRate * 100)
@@ -118,6 +119,7 @@ public class BubbleSpawner : MonoBehaviour
             bubble.AddComponent<BubbleMover>();
             bubble.GetComponent<BubbleMover>().speed = randomSpeed;
         }
+        bubble.GetComponentInChildren<SpriteRenderer>().gameObject.AddComponent<BubbleRotate>();
     }
 
     public void FixedUpdate()
