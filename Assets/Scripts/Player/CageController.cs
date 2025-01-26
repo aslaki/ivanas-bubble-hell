@@ -38,7 +38,7 @@ public class CageController : MonoBehaviour
         {
             return;
         }
-        leftPressed = Input.GetKey(KeyCode.LeftArrow);
-        rightPressed = Input.GetKey(KeyCode.RightArrow);
+        leftPressed = Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A);
+        rightPressed = Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D);
     }
 }
