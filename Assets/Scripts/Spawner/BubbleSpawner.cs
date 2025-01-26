@@ -29,7 +29,7 @@ public class BubbleSpawner : MonoBehaviour
 
     public Rune[] collectedRunes = new Rune[0];
 
-    public float runeBubbleStartSpawnInSec = 65;
+    public float runeBubbleStartSpawnInSec = 40;
 
     public float gamePlayTimer = 0;
 
