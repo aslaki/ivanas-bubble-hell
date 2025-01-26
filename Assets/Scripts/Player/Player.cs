@@ -125,14 +125,14 @@ public class Player : MonoBehaviour
         fairy.GetComponent<SpriteRenderer>().sortingOrder = 2;
         //Move fairy down
         var newPos = new Vector3(fairy.transform.position.x, fairy.transform.position.y - 0.5f, fairy.transform.position.z);
-        yield return MoveToPosition(fairy.transform, newPos, 1.5f);
+        yield return MoveToPosition(fairy.transform, newPos, 0.3f);
 
         //Wait for 1 second
-        yield return WaitForSeconds(1);
+        yield return WaitForSeconds(0.2f);
 
         //Fly off screen
         newPos = new Vector3(fairy.transform.position.x + 10, fairy.transform.position.y, fairy.transform.position.z);
-        yield return MoveToPosition(fairy.transform, newPos, 5f);
+        yield return MoveToPosition(fairy.transform, newPos, 1.5f);
 
         //Sequence end
         GameManager.Instance.OnSequenceEnd?.Invoke(Sequence.Win);
