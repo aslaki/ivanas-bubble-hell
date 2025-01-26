@@ -234,7 +234,7 @@ Transform:
   m_GameObject: {fileID: 126135666}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.2339728, y: -1.1037034, z: -0.7189099}
+  m_LocalPosition: {x: -0.0016999245, y: -0.014199972, z: 0}
   m_LocalScale: {x: 0.8085757, y: 0.8085757, z: 0.8085757}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -641,7 +641,7 @@ Transform:
   m_GameObject: {fileID: 1024793924}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.2322729, y: 1.0895034, z: 0.7189099}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -907,7 +907,7 @@ Transform:
   m_GameObject: {fileID: 1519938858}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.239673, y: -1.0853034, z: -0.7189099}
+  m_LocalPosition: {x: -0.007400036, y: 0.0041999817, z: 0}
   m_LocalScale: {x: 0.81448483, y: 0.81448483, z: 0.81448483}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -994,7 +994,7 @@ Transform:
   m_GameObject: {fileID: 1570312179}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.841673, y: -4.4315033, z: -0.7189099}
+  m_LocalPosition: {x: 0.39059997, y: -3.342, z: 0}
   m_LocalScale: {x: 0.8185461, y: 0.8185461, z: 0.8185461}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1289,7 +1289,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3951293732059490732, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
       propertyPath: bubbles.Array.size
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3951293732059490732, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
       propertyPath: 'bubbles.Array.data[1]'
@@ -1298,15 +1298,35 @@ PrefabInstance:
     - target: {fileID: 3951293732059490732, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
       propertyPath: 'bubbles.Array.data[2]'
       value: 
-      objectReference: {fileID: 3321781538660849865, guid: e40a1fa98e1cf3344b0e2f46f5c485b7, type: 3}
+      objectReference: {fileID: 1502277878847987978, guid: 0505b1869bafbe049af76ac64c1f63e8, type: 3}
+    - target: {fileID: 3951293732059490732, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
+      propertyPath: 'bubbles.Array.data[3]'
+      value: 
+      objectReference: {fileID: 4450005278015502754, guid: d820282f651bf654cacd2db7a0f7a452, type: 3}
+    - target: {fileID: 3951293732059490732, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
+      propertyPath: 'bubbles.Array.data[4]'
+      value: 
+      objectReference: {fileID: 1502277878847987978, guid: 70de85b9938f0924fb0e94b04c3ee121, type: 3}
+    - target: {fileID: 3951293732059490732, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
+      propertyPath: 'bubbles.Array.data[5]'
+      value: 
+      objectReference: {fileID: 4450005278015502754, guid: 78aaf39085a778c48be0e7321dcac450, type: 3}
     - target: {fileID: 3951293732059490732, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
       propertyPath: runeBubbles.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3951293732059490732, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
       propertyPath: 'runeBubbles.Array.data[0]'
       value: 
       objectReference: {fileID: 3321781538660849865, guid: e40a1fa98e1cf3344b0e2f46f5c485b7, type: 3}
+    - target: {fileID: 3951293732059490732, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
+      propertyPath: 'runeBubbles.Array.data[1]'
+      value: 
+      objectReference: {fileID: 3321781538660849865, guid: 22f65b794e5db124694bf5b9a6c37b2e, type: 3}
+    - target: {fileID: 3951293732059490732, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
+      propertyPath: 'runeBubbles.Array.data[2]'
+      value: 
+      objectReference: {fileID: 3321781538660849865, guid: 620667a7b0a0f1b49950197ac6665bdc, type: 3}
     - target: {fileID: 4067450015278817404, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
