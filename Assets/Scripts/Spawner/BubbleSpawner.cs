@@ -29,6 +29,10 @@ public class BubbleSpawner : MonoBehaviour
 
     public Rune[] collectedRunes = new Rune[0];
 
+    public float runeBubbleStartSpawnInSec = 65;
+
+    public float gamePlayTimer = 0;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -94,13 +98,17 @@ public class BubbleSpawner : MonoBehaviour
         
 
         // Rune bubbles custom spawn rate
-        if (UnityEngine.Random.Range(0, 100) < runeBubbleSpawnRate * 100)
+        if (UnityEngine.Random.Range(0, 100) < runeBubbleSpawnRate * 100 && gamePlayTimer > runeBubbleStartSpawnInSec)
         {
-            randomType = UnityEngine.Random.Range(0, runeBubbles.Length);
-            bubble = Instantiate(runeBubbles[randomType], spawnPoint.transform.position, Quaternion.identity);
-            var allRunes = Enum.GetValues(typeof(Rune));
-            var notCollectedRunes = allRunes.Cast<Rune>().Except(collectedRunes);
-            bubble.GetComponent<RuneBubble>().rune = notCollectedRunes.ElementAt(UnityEngine.Random.Range(0, notCollectedRunes.Count()));
+            var filteredRuneBubbles = runeBubbles.Where(runeBubble => !collectedRunes.
+            Contains(runeBubble.GetComponent<RuneBubble>().rune)).ToArray();
+            if (filteredRuneBubbles.Length == 0)
+            {
+                return;
+            }
+            randomType = UnityEngine.Random.Range(0, filteredRuneBubbles.Length);
+            bubble = Instantiate(filteredRuneBubbles[randomType], spawnPoint.transform.position, Quaternion.identity);
+            Debug.Log("Rune bubble spawned: " + bubble.GetComponent<RuneBubble>().rune);
         } else {
             randomType = UnityEngine.Random.Range(0, bubbles.Length);
             bubble = Instantiate(bubbles[randomType], spawnPoint.transform.position, Quaternion.identity);
@@ -126,6 +134,8 @@ public class BubbleSpawner : MonoBehaviour
     {
         currentFireCooldown = Mathf.Clamp(currentFireCooldown - (Time.deltaTime * cooldownTimeModifier),
          0.01f, fireCooldown);
+
+         gamePlayTimer += Time.fixedDeltaTime;
     }
 
     public void OnDestroy()

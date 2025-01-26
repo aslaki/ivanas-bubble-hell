@@ -1352,26 +1352,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 646228882837367455, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 878593906582567331, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3190161394486624980, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3190161394486624980, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3190161394486624980, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 3190161394486624980, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.4
@@ -1412,77 +1392,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3885102076073963453, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.293
-      objectReference: {fileID: 0}
     - target: {fileID: 3951293732059490732, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
-      propertyPath: bubbles.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3951293732059490732, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
-      propertyPath: 'bubbles.Array.data[1]'
-      value: 
-      objectReference: {fileID: 4450005278015502754, guid: b0817f2ef69ea004f8f909098e12698a, type: 3}
-    - target: {fileID: 3951293732059490732, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
-      propertyPath: 'bubbles.Array.data[2]'
-      value: 
-      objectReference: {fileID: 1502277878847987978, guid: 0505b1869bafbe049af76ac64c1f63e8, type: 3}
-    - target: {fileID: 3951293732059490732, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
-      propertyPath: 'bubbles.Array.data[3]'
-      value: 
-      objectReference: {fileID: 4450005278015502754, guid: d820282f651bf654cacd2db7a0f7a452, type: 3}
-    - target: {fileID: 3951293732059490732, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
-      propertyPath: 'bubbles.Array.data[4]'
-      value: 
-      objectReference: {fileID: 1502277878847987978, guid: 70de85b9938f0924fb0e94b04c3ee121, type: 3}
-    - target: {fileID: 3951293732059490732, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
-      propertyPath: 'bubbles.Array.data[5]'
-      value: 
-      objectReference: {fileID: 4450005278015502754, guid: 78aaf39085a778c48be0e7321dcac450, type: 3}
-    - target: {fileID: 3951293732059490732, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
-      propertyPath: runeBubbles.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3951293732059490732, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
-      propertyPath: 'runeBubbles.Array.data[0]'
-      value: 
-      objectReference: {fileID: 3321781538660849865, guid: e40a1fa98e1cf3344b0e2f46f5c485b7, type: 3}
-    - target: {fileID: 3951293732059490732, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
-      propertyPath: 'runeBubbles.Array.data[1]'
-      value: 
-      objectReference: {fileID: 3321781538660849865, guid: 22f65b794e5db124694bf5b9a6c37b2e, type: 3}
-    - target: {fileID: 3951293732059490732, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
-      propertyPath: 'runeBubbles.Array.data[2]'
-      value: 
-      objectReference: {fileID: 3321781538660849865, guid: 620667a7b0a0f1b49950197ac6665bdc, type: 3}
-    - target: {fileID: 4067450015278817404, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5168464219432309980, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5380430031901077097, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6311127652869908763, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6531686816560157864, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      propertyPath: cooldownTimeModifier
+      value: 0.0005
       objectReference: {fileID: 0}
     - target: {fileID: 7425703261613621305, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
       propertyPath: m_Name
       value: Cauldron
-      objectReference: {fileID: 0}
-    - target: {fileID: 8926715989861895976, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
