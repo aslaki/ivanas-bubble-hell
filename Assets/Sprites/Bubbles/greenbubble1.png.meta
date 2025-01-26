@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b0c6eef089cbc8a4da4e642828b4515d
+guid: d87e713c86c5bbb42aebff457837ba6d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 132021341604280761
-    second: orangeglow_ANIMATE_IN_UNITY_0
+      213: 8075019286538788021
+    second: greenbubble1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: orangeglow_ANIMATE_IN_UNITY_0
+      name: greenbubble1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2200
-        height: 1237
+        x: 54
+        y: 57
+        width: 121
+        height: 114
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9b9f711f5b805d100800000000000000
-      internalID: 132021341604280761
+      spriteID: 5bc9290024b301070800000000000000
+      internalID: 8075019286538788021
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      orangeglow_ANIMATE_IN_UNITY_0: 132021341604280761
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
