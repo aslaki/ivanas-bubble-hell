@@ -1,0 +1,390 @@
+fileFormatVersion: 2
+guid: 5fa8f3a7aca070c44ad1b6a81c91d35f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8944709456039936089
+    second: FAIRY_JUMP_ANIMATION_0
+  - first:
+      213: 1889058032403039982
+    second: FAIRY_JUMP_ANIMATION_1
+  - first:
+      213: 5872592253902675847
+    second: FAIRY_JUMP_ANIMATION_2
+  - first:
+      213: -1613478307738216371
+    second: FAIRY_JUMP_ANIMATION_3
+  - first:
+      213: -5182606043203579597
+    second: FAIRY_JUMP_ANIMATION_4
+  - first:
+      213: 932337354710499842
+    second: FAIRY_JUMP_ANIMATION_5
+  - first:
+      213: 2456509516707214541
+    second: FAIRY_JUMP_ANIMATION_6
+  - first:
+      213: 476399303195976762
+    second: FAIRY_JUMP_ANIMATION_7
+  - first:
+      213: 3200817583526429800
+    second: FAIRY_JUMP_ANIMATION_8
+  - first:
+      213: 8950701170015726963
+    second: FAIRY_JUMP_ANIMATION_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FAIRY_JUMP_ANIMATION_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 424
+        width: 200
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9508652fbddf12c70800000000000000
+      internalID: 8944709456039936089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FAIRY_JUMP_ANIMATION_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 424
+        width: 200
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee64b759548473a10800000000000000
+      internalID: 1889058032403039982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FAIRY_JUMP_ANIMATION_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 424
+        width: 200
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78f54946a83af7150800000000000000
+      internalID: 5872592253902675847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FAIRY_JUMP_ANIMATION_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 424
+        width: 200
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4817761706cb99e0800000000000000
+      internalID: -1613478307738216371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FAIRY_JUMP_ANIMATION_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 212
+        width: 200
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 331de08234fa318b0800000000000000
+      internalID: -5182606043203579597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FAIRY_JUMP_ANIMATION_5
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 212
+        width: 200
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 202c85662e350fc00800000000000000
+      internalID: 932337354710499842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FAIRY_JUMP_ANIMATION_6
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 212
+        width: 200
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc433bae366471220800000000000000
+      internalID: 2456509516707214541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FAIRY_JUMP_ANIMATION_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 212
+        width: 200
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a346d3664a28c9600800000000000000
+      internalID: 476399303195976762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FAIRY_JUMP_ANIMATION_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 200
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 864cae032a69b6c20800000000000000
+      internalID: 3200817583526429800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FAIRY_JUMP_ANIMATION_9
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 200
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37de5719a47473c70800000000000000
+      internalID: 8950701170015726963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4b612fffd32c9ac4580374011ba83fdb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      FAIRY_JUMP_ANIMATION_0: 8944709456039936089
+      FAIRY_JUMP_ANIMATION_1: 1889058032403039982
+      FAIRY_JUMP_ANIMATION_2: 5872592253902675847
+      FAIRY_JUMP_ANIMATION_3: -1613478307738216371
+      FAIRY_JUMP_ANIMATION_4: -5182606043203579597
+      FAIRY_JUMP_ANIMATION_5: 932337354710499842
+      FAIRY_JUMP_ANIMATION_6: 2456509516707214541
+      FAIRY_JUMP_ANIMATION_7: 476399303195976762
+      FAIRY_JUMP_ANIMATION_8: 3200817583526429800
+      FAIRY_JUMP_ANIMATION_9: 8950701170015726963
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
