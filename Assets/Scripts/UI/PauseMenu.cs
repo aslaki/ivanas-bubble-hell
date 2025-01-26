@@ -35,6 +35,7 @@ public class PauseMenu : MonoBehaviour
 
     public void OnExitToMenuButton()
     {
+        Time.timeScale = 1;
         GameManager.Instance.ExitToMenu();
     }
 
