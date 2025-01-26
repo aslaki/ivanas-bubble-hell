@@ -99,7 +99,7 @@ public class Player : MonoBehaviour
         // Also rotate cage to 0 degrees
         while(Mathf.Abs(cageBody.rotation) > 0.1f)
         {
-            cageBody.rotation = Mathf.MoveTowards(cageBody.rotation, 0, 0.1f);
+            cageBody.transform.rotation = Quaternion.RotateTowards(cageBody.transform.rotation, Quaternion.identity, 1.0f);
             yield return null;
         }
 
