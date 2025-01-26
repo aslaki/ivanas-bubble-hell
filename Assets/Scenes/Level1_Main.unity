@@ -1401,10 +1401,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3951293732059490732, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
-      propertyPath: cooldownTimeModifier
-      value: 0.0005
-      objectReference: {fileID: 0}
     - target: {fileID: 7425703261613621305, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
       propertyPath: m_Name
       value: Cauldron
