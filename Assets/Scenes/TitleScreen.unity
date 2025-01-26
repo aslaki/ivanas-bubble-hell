@@ -757,7 +757,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Aarni
+  m_text: Aarni Aspi
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2555944e03580e148a1b5b416a3b42e0, type: 2}
   m_sharedMaterial: {fileID: -2635026479355065151, guid: 2555944e03580e148a1b5b416a3b42e0, type: 2}
