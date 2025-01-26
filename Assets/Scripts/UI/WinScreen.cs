@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using static GameManager;
 
 public class WinScreen : MonoBehaviour
 {
@@ -9,11 +10,15 @@ public class WinScreen : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        GameManager.Instance.OnRunesCollectionComplete += OnWin;
+        GameManager.Instance.OnSequenceEnd += OnSequenceEnd;
     }
 
-    private void OnWin()
+    private void OnSequenceEnd(Sequence sequencej)
     {
+        if(sequencej != Sequence.Win)
+        {
+            return;
+        }
         Time.timeScale = 0;
         winScreen.SetActive(true);
         GameManager.Instance.OnMenuOpen?.Invoke(GameManager.Menu.WinMenu);
@@ -28,12 +33,12 @@ public class WinScreen : MonoBehaviour
     public void OnQuit()
     {
         Time.timeScale = 1;
-        GameManager.Instance.Quit();
+        GameManager.Instance.ExitToMenu();
         GameManager.Instance.OnMenuClose?.Invoke(GameManager.Menu.WinMenu);
     }
 
     void Destroy()
     {
-        GameManager.Instance.OnRunesCollectionComplete -= OnWin;
+        GameManager.Instance.OnSequenceEnd -= OnSequenceEnd;
     }
 }

@@ -888,6 +888,9 @@ MonoBehaviour:
   cageBody: {fileID: 5688015800968240848}
   cageController: {fileID: 1574319532897551229}
   startZoneCollider: {fileID: 7439902808623848169}
+  animator: {fileID: 5878711678200831985}
+  doorSprite: {fileID: 4010257177431644278}
+  fairy: {fileID: 7309655010812999488}
 --- !u!1 &4694358603324229659
 GameObject:
   m_ObjectHideFlags: 0
@@ -2188,7 +2191,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: -5450082180001217501, guid: d1d7c427645547840a686dde352f6b6e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

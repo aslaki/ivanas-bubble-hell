@@ -26,6 +26,15 @@ public class Player : MonoBehaviour
 
     private PlayerAudio playerAudio;
 
+    [SerializeField]
+    private Animator animator;
+
+    [SerializeField]
+    private SpriteRenderer doorSprite;
+
+
+    [SerializeField]
+    private GameObject fairy;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -38,10 +47,12 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        #if DEBUG
         if(Input.GetKeyDown(KeyCode.K))
         {
             StartCoroutine(PlayWinSequence());
         }
+        #endif
     }
 
     public void TakeDamage(int damage)
@@ -103,6 +114,27 @@ public class Player : MonoBehaviour
             yield return null;
         }
 
+        // Wait for 1 second
+        yield return FadeOut(doorSprite, 1.5f);
+
+        // Play win animation
+        animator.SetTrigger("fairy_jump");
+        fairy.GetComponent<SpriteRenderer>().sortingOrder = 2;
+        //Move fairy down
+        var newPos = new Vector3(fairy.transform.position.x, fairy.transform.position.y - 0.5f, fairy.transform.position.z);
+        yield return MoveToPosition(fairy.transform, newPos, 1.5f);
+
+        //Wait for 1 second
+        yield return WaitForSeconds(1);
+
+        //Fly off screen
+        newPos = new Vector3(fairy.transform.position.x + 10, fairy.transform.position.y, fairy.transform.position.z);
+        yield return MoveToPosition(fairy.transform, newPos, 5f);
+
+        //Sequence end
+        GameManager.Instance.OnSequenceEnd?.Invoke(Sequence.Win);
+
+
         Debug.Log("Win sequence complete");
     }
 
@@ -115,6 +147,36 @@ public class Player : MonoBehaviour
     {
         while(!startZoneCollider.IsTouching(cageBody.GetComponent<Collider2D>()))
         {
+            yield return null;
+        }
+    }
+
+    //Fade out sprite coroutine
+    System.Collections.IEnumerator FadeOut(SpriteRenderer sprite, float duration)
+    {
+        float startAlpha = sprite.color.a;
+        float t = 0;
+
+        while(t < 1)
+        {
+            t += Time.deltaTime / duration;
+            Color newColor = new Color(sprite.color.r, sprite.color.g, sprite.color.b, Mathf.Lerp(startAlpha, 0, t));
+            sprite.color = newColor;
+            yield return null;
+        }
+    }
+
+    //Move object to position coroutine
+    System.Collections.IEnumerator MoveToPosition(Transform transform, Vector3 position, float duration)
+    {
+        float t = 0;
+
+        Vector3 startPosition = transform.position;
+
+        while(t < 1)
+        {
+            t += Time.deltaTime / duration;
+            transform.position = Vector3.Lerp(startPosition, position, t);
             yield return null;
         }
     }
