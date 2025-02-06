@@ -17,6 +17,7 @@ public class RuneIndicator : MonoBehaviour
     void Start()
     {
         GameManager.Instance.OnCollectRune += OnCollectRune;
+        glowingRune.SetActive(false);
     }
 
     private void OnCollectRune(GameManager.Rune rune, GameManager.Rune[] arg2)
@@ -34,6 +35,7 @@ public class RuneIndicator : MonoBehaviour
         Color color = renderer.color;
         color.a = 0;
         renderer.color = color;
+        glowingRune.SetActive(true);
 
         while (renderer.color.a < 1.0f)
         {
