@@ -1,11 +1,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Playables;
 using static GameManager;
 
 public class Player : MonoBehaviour
 {
-    
+
     public HashSet<Rune> collectedRunes = new HashSet<Rune>();
 
     public int maxHealth = 100;
@@ -38,7 +39,10 @@ public class Player : MonoBehaviour
 
     [SerializeField]
     private GameObject fairy;
-    
+
+    [SerializeField]
+    private PlayableDirector director;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -50,32 +54,32 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        #if DEBUG
-        if(Input.GetKeyDown(KeyCode.K))
+#if DEBUG
+        if (Input.GetKeyDown(KeyCode.K))
         {
             StartCoroutine(PlayWinSequence());
         }
-        #endif
+#endif
     }
 
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         GameManager.Instance.OnPlayerHealthChange?.Invoke(currentHealth, maxHealth);
-        if(currentHealth <= 0)
+        if (currentHealth <= 0)
         {
             Die();
         }
-        
+
     }
 
     public void OnCollectRune(Rune rune)
     {
         collectedRunes.Add(rune);
         GameManager.Instance.OnCollectRune?.Invoke(rune, collectedRunes.ToArray());
-        playerAudio.LockSoundEffects(); 
+        playerAudio.LockSoundEffects();
 
-        if(collectedRunes.Count == numberOfRunesRequired)
+        if (collectedRunes.Count == numberOfRunesRequired)
         {
             StartCoroutine(PlayWinSequence());
         }
@@ -103,15 +107,15 @@ public class Player : MonoBehaviour
         cageBody.bodyType = RigidbodyType2D.Kinematic;
         cageBody.linearVelocity = Vector2.zero;
         cageBody.angularVelocity = 0;
-        
-        while(Vector2.Distance(cageBody.position, startPosition) > 0.1f)
+
+        while (Vector2.Distance(cageBody.position, startPosition) > 0.1f)
         {
             cageBody.position = Vector2.MoveTowards(cageBody.position, startPosition, 0.1f);
             yield return null;
         }
 
         // Also rotate cage to 0 degrees
-        while(Mathf.Abs(cageBody.rotation) > 0.1f)
+        while (Mathf.Abs(cageBody.rotation) > 0.1f)
         {
             cageBody.transform.rotation = Quaternion.RotateTowards(cageBody.transform.rotation, Quaternion.identity, 1.0f);
             yield return null;
@@ -121,7 +125,10 @@ public class Player : MonoBehaviour
         yield return FadeOut(doorSprite, 1.5f);
 
         // Play win animation
-        animator.SetTrigger("fairy_jump");
+        director.Play();
+
+        yield return new WaitForSeconds((float)director.duration);
+        /*animator.SetTrigger("fairy_jump");
         fairy.GetComponent<SpriteRenderer>().sortingOrder = 2;
         //Move fairy down
         var newPos = new Vector3(fairy.transform.position.x, fairy.transform.position.y - 0.5f, fairy.transform.position.z);
@@ -132,7 +139,7 @@ public class Player : MonoBehaviour
 
         //Fly off screen
         newPos = new Vector3(fairy.transform.position.x + 10, fairy.transform.position.y, fairy.transform.position.z);
-        yield return MoveToPosition(fairy.transform, newPos, 1.5f);
+        yield return MoveToPosition(fairy.transform, newPos, 1.5f);*/
 
         //Sequence end
         GameManager.Instance.OnSequenceEnd?.Invoke(Sequence.Win);
@@ -148,7 +155,7 @@ public class Player : MonoBehaviour
 
     System.Collections.IEnumerator WaitForPlayerInStartZone()
     {
-        while(!startZoneCollider.IsTouching(cageBody.GetComponent<Collider2D>()))
+        while (!startZoneCollider.IsTouching(cageBody.GetComponent<Collider2D>()))
         {
             yield return null;
         }
@@ -160,7 +167,7 @@ public class Player : MonoBehaviour
         float startAlpha = sprite.color.a;
         float t = 0;
 
-        while(t < 1)
+        while (t < 1)
         {
             t += Time.deltaTime / duration;
             Color newColor = new Color(sprite.color.r, sprite.color.g, sprite.color.b, Mathf.Lerp(startAlpha, 0, t));
@@ -176,7 +183,7 @@ public class Player : MonoBehaviour
 
         Vector3 startPosition = transform.position;
 
-        while(t < 1)
+        while (t < 1)
         {
             t += Time.deltaTime / duration;
             transform.position = Vector3.Lerp(startPosition, position, t);

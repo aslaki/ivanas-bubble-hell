@@ -33,11 +33,13 @@ public class BubbleSpawner : MonoBehaviour
 
     public float gamePlayTimer = 0;
 
+    private bool isSpawning = true;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         currentFireCooldown = fireCooldown;
-        spawnPoints = new List<GameObject>();   
+        spawnPoints = new List<GameObject>();
         //Fetch all spawnpoints (child objects) of the spawner
         foreach (Transform child in transform)
         {
@@ -45,13 +47,23 @@ public class BubbleSpawner : MonoBehaviour
         }
 
         GameManager.Instance.OnCollectRune += OnCollectRune;
+        GameManager.Instance.OnSequenceStart += OnSequenceStart;
 
         StartCoroutine(StartDelay());
     }
 
+    private void OnSequenceStart(GameManager.Sequence sequence)
+    {
+        if (sequence == GameManager.Sequence.Win)
+        {
+            isSpawning = false;
+        }
+    }
+
     public void SpawningStart()
     {
-        RandomizeSpawnpoints(spawnPoints);
+        if (isSpawning)
+            RandomizeSpawnpoints(spawnPoints);
     }
 
     public void OnCollectRune(Rune rune, Rune[] collectedRunes)
@@ -65,29 +77,33 @@ public class BubbleSpawner : MonoBehaviour
 
         System.Random random = new System.Random();
 
-        for(int i = pointCount - 1; i > 1; i--)
+        for (int i = pointCount - 1; i > 1; i--)
         {
             int rnd = random.Next(i + 1);
 
             T value = spawnPoints[rnd];
             spawnPoints[rnd] = spawnPoints[i];
             spawnPoints[i] = value;
-        }  
+        }
         StartCoroutine(LaunchSpawningSequence());
     }
 
     private IEnumerator LaunchSpawningSequence()
     {
-        for (int i = 0; i < spawnPoints.Count; i++ )
+        for (int i = 0; i < spawnPoints.Count; i++)
         {
             SpawnBubble(spawnPoints[i].transform);
             yield return new WaitForSeconds(currentFireCooldown);
+            if (!isSpawning)
+            {
+                break;
+            }
         }
 
         SpawningStart();
     }
 
- 
+
     private void SpawnBubble(Transform spawnPoint)
     {
         int randomType;
@@ -95,7 +111,7 @@ public class BubbleSpawner : MonoBehaviour
         float randomSpeed;
 
         GameObject bubble;
-        
+
 
         // Rune bubbles custom spawn rate
         if (UnityEngine.Random.Range(0, 100) < runeBubbleSpawnRate * 100 && gamePlayTimer > runeBubbleStartSpawnInSec)
@@ -109,7 +125,9 @@ public class BubbleSpawner : MonoBehaviour
             randomType = UnityEngine.Random.Range(0, filteredRuneBubbles.Length);
             bubble = Instantiate(filteredRuneBubbles[randomType], spawnPoint.transform.position, Quaternion.identity);
             Debug.Log("Rune bubble spawned: " + bubble.GetComponent<RuneBubble>().rune);
-        } else {
+        }
+        else
+        {
             randomType = UnityEngine.Random.Range(0, bubbles.Length);
             bubble = Instantiate(bubbles[randomType], spawnPoint.transform.position, Quaternion.identity);
         }
@@ -117,10 +135,10 @@ public class BubbleSpawner : MonoBehaviour
         randomMovement = UnityEngine.Random.Range(0, 2);
         randomSpeed = UnityEngine.Random.Range(2, 5);
 
-        if(randomMovement == 1)
+        if (randomMovement == 1)
         {
-            bubble.AddComponent<BubbleWiggle>();  
-            bubble.GetComponent<BubbleWiggle>().speed = randomSpeed;    
+            bubble.AddComponent<BubbleWiggle>();
+            bubble.GetComponent<BubbleWiggle>().speed = randomSpeed;
         }
         else
         {
@@ -135,12 +153,13 @@ public class BubbleSpawner : MonoBehaviour
         currentFireCooldown = Mathf.Clamp(currentFireCooldown - (Time.deltaTime * cooldownTimeModifier),
          0.01f, fireCooldown);
 
-         gamePlayTimer += Time.fixedDeltaTime;
+        gamePlayTimer += Time.fixedDeltaTime;
     }
 
     public void OnDestroy()
     {
         GameManager.Instance.OnCollectRune -= OnCollectRune;
+        GameManager.Instance.OnSequenceStart -= OnSequenceStart;
     }
 
     private IEnumerator StartDelay()
@@ -149,5 +168,5 @@ public class BubbleSpawner : MonoBehaviour
         SpawningStart();
     }
 
-   
+
 }
