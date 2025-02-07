@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      baba_tausta_kaiken_taakse_0: -3027423011936895274
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
