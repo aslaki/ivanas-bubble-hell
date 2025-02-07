@@ -43,6 +43,9 @@ public class Player : MonoBehaviour
     [SerializeField]
     private PlayableDirector director;
 
+    [SerializeField]
+    private SpriteRenderer fairySprite;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -123,6 +126,9 @@ public class Player : MonoBehaviour
 
         // Wait for 1 second
         yield return FadeOut(doorSprite, 1.5f);
+
+
+        fairySprite.sortingOrder = 3;
 
         // Play win animation
         director.Play();
