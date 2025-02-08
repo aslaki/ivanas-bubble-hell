@@ -1,0 +1,617 @@
+fileFormatVersion: 2
+guid: 4c4d8680e4c9f92428bee7ab15670331
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5877748181618877586
+    second: baba_tausta_tummennus_katonraja_0
+  - first:
+      213: -5998038295499164168
+    second: baba_tausta_tummennus_katonraja_1
+  - first:
+      213: 3618057508808482814
+    second: baba_tausta_tummennus_katonraja_2
+  - first:
+      213: 1705223464199362311
+    second: baba_tausta_tummennus_katonraja_3
+  - first:
+      213: -3221308529182322350
+    second: baba_tausta_tummennus_katonraja_4
+  - first:
+      213: -8935137086054485752
+    second: baba_tausta_tummennus_katonraja_5
+  - first:
+      213: -7641749883598633598
+    second: baba_tausta_tummennus_katonraja_6
+  - first:
+      213: -1260313767935815696
+    second: baba_tausta_tummennus_katonraja_7
+  - first:
+      213: 5494660864303092327
+    second: baba_tausta_tummennus_katonraja_8
+  - first:
+      213: 390815935661578018
+    second: baba_tausta_tummennus_katonraja_9
+  - first:
+      213: -6780573142757847575
+    second: baba_tausta_tummennus_katonraja_10
+  - first:
+      213: 2312388032967971185
+    second: baba_tausta_tummennus_katonraja_11
+  - first:
+      213: -1823703005262115452
+    second: baba_tausta_tummennus_katonraja_12
+  - first:
+      213: -429117741409573693
+    second: baba_tausta_tummennus_katonraja_13
+  - first:
+      213: -574081758368905448
+    second: baba_tausta_tummennus_katonraja_14
+  - first:
+      213: 1815238227886261161
+    second: baba_tausta_tummennus_katonraja_15
+  - first:
+      213: -3741411698426204408
+    second: baba_tausta_tummennus_katonraja_16
+  - first:
+      213: -535199560719384888
+    second: baba_tausta_tummennus_katonraja_17
+  - first:
+      213: -7537560019025552028
+    second: baba_tausta_tummennus_katonraja_18
+  - first:
+      213: 3274716971966151279
+    second: baba_tausta_tummennus_katonraja_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: baba_tausta_tummennus_katonraja_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 635
+        width: 3184
+        height: 1156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6b9863ab2b0e6ea0800000000000000
+      internalID: -5877748181618877586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baba_tausta_tummennus_katonraja_1
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 684
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f5359ff2ffa2cca0800000000000000
+      internalID: -5998038295499164168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baba_tausta_tummennus_katonraja_2
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 681
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: effd67d822ce53230800000000000000
+      internalID: 3618057508808482814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baba_tausta_tummennus_katonraja_3
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 646
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 707934eb4bb2aa710800000000000000
+      internalID: 1705223464199362311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baba_tausta_tummennus_katonraja_4
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 683
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 251d62eb5fc9b43d0800000000000000
+      internalID: -3221308529182322350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baba_tausta_tummennus_katonraja_5
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 666
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 801bd4e1924000480800000000000000
+      internalID: -8935137086054485752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baba_tausta_tummennus_katonraja_6
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 676
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28588b5f7fc03f590800000000000000
+      internalID: -7641749883598633598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baba_tausta_tummennus_katonraja_7
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 652
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ffc6a43e47728ee0800000000000000
+      internalID: -1260313767935815696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baba_tausta_tummennus_katonraja_8
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 660
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 762d602b1f4f04c40800000000000000
+      internalID: 5494660864303092327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baba_tausta_tummennus_katonraja_9
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 645
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2279ba9d5057c6500800000000000000
+      internalID: 390815935661578018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baba_tausta_tummennus_katonraja_10
+      rect:
+        serializedVersion: 2
+        x: 3012
+        y: 683
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ed4d54d6a096e1a0800000000000000
+      internalID: -6780573142757847575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baba_tausta_tummennus_katonraja_11
+      rect:
+        serializedVersion: 2
+        x: 3030
+        y: 680
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1719be71aa0471020800000000000000
+      internalID: 2312388032967971185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baba_tausta_tummennus_katonraja_12
+      rect:
+        serializedVersion: 2
+        x: 3037
+        y: 669
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48d0a8377c7e0b6e0800000000000000
+      internalID: -1823703005262115452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baba_tausta_tummennus_katonraja_13
+      rect:
+        serializedVersion: 2
+        x: 3042
+        y: 676
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c4e67010b77b0af0800000000000000
+      internalID: -429117741409573693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baba_tausta_tummennus_katonraja_14
+      rect:
+        serializedVersion: 2
+        x: 3053
+        y: 655
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 817c360bea37808f0800000000000000
+      internalID: -574081758368905448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baba_tausta_tummennus_katonraja_15
+      rect:
+        serializedVersion: 2
+        x: 3056
+        y: 681
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a3cedbfc85013910800000000000000
+      internalID: 1815238227886261161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baba_tausta_tummennus_katonraja_16
+      rect:
+        serializedVersion: 2
+        x: 3071
+        y: 676
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80fa0d412e5d31cc0800000000000000
+      internalID: -3741411698426204408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baba_tausta_tummennus_katonraja_17
+      rect:
+        serializedVersion: 2
+        x: 3079
+        y: 669
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ce306bc5d69298f0800000000000000
+      internalID: -535199560719384888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baba_tausta_tummennus_katonraja_18
+      rect:
+        serializedVersion: 2
+        x: 3083
+        y: 637
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46d9bc03915356790800000000000000
+      internalID: -7537560019025552028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baba_tausta_tummennus_katonraja_19
+      rect:
+        serializedVersion: 2
+        x: 3095
+        y: 672
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a3cfd5cb1227d20800000000000000
+      internalID: 3274716971966151279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
