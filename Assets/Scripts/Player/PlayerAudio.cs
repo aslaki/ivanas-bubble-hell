@@ -6,6 +6,7 @@ public class PlayerAudio : MonoBehaviour
 
     [SerializeField] private AudioClip[] lockAudioClips;
     [SerializeField] private AudioClip cageDeath;
+    [SerializeField] private AudioClip cageVictory;
 
     private int lockSoundState;
 
@@ -35,6 +36,12 @@ public class PlayerAudio : MonoBehaviour
     public void CageDeathSound()
     {
         audioSource.clip = cageDeath;
+        audioSource.Play();
+    }
+
+    public void CageVictorySound()
+    {
+        audioSource.clip = cageVictory;
         audioSource.Play();
     }
 }

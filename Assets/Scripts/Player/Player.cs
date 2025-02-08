@@ -125,6 +125,7 @@ public class Player : MonoBehaviour
         }
 
         // Wait for 1 second
+        playerAudio.CageVictorySound();
         yield return FadeOut(doorSprite, 1.5f);
 
 
