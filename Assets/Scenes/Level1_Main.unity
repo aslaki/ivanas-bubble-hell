@@ -658,6 +658,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerAudio: {fileID: 1127592846}
+  cauldronSplash: {fileID: 8921194615924934133, guid: 3b0800d8f136b204ba996fccd64ba10e, type: 3}
 --- !u!1 &188609905 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 362069474308537130, guid: dc8c757e335959a45a5764f1871f4696, type: 3}
@@ -963,7 +964,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.05582142, y: 0.3442315}
+  m_Offset: {x: -0.046133757, y: 0.3442315}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -973,7 +974,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 8.9638405, y: 0.31153703}
+  m_Size: {x: 8.148203, y: 0.31153703}
   m_EdgeRadius: 0
 --- !u!1 &1024793924
 GameObject:
@@ -1238,6 +1239,108 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e00c9f8e15fdcf54996a12f63d3c79b2, type: 3}
+--- !u!1 &1426032992 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7629539603005469256, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
+  m_PrefabInstance: {fileID: 4457815835581773942}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1426032994
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426032992}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 3044562113953841579, guid: e73dffc659a54fa438bd051ed19b9421, type: 2}
+  m_audioClip: {fileID: 8300000, guid: f47117db6f51ed645be1cf33dd4bc589, type: 3}
+  m_Resource: {fileID: 8300000, guid: f47117db6f51ed645be1cf33dd4bc589, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1519938858
 GameObject:
   m_ObjectHideFlags: 0
@@ -2240,6 +2343,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3951293732059490732, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
+      propertyPath: bubbleSpawnSound
+      value: 
+      objectReference: {fileID: 1426032994}
     - target: {fileID: 7425703261613621305, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
       propertyPath: m_Name
       value: Cauldron
@@ -2247,7 +2354,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7629539603005469256, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1426032994}
   m_SourcePrefab: {fileID: 100100000, guid: 9ab80457913dc7542bdceaab1f8a87eb, type: 3}
 --- !u!1001 &5398167890506698313
 PrefabInstance:

@@ -1,0 +1,552 @@
+fileFormatVersion: 2
+guid: c1b8fefd2d31d6449a9a4f0e815947c1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7585977974644902091
+    second: spritesheet_cauldronsplash_noline_0
+  - first:
+      213: -5261330492767576631
+    second: spritesheet_cauldronsplash_noline_1
+  - first:
+      213: -2044054472329708655
+    second: spritesheet_cauldronsplash_noline_2
+  - first:
+      213: 7069045375094096174
+    second: spritesheet_cauldronsplash_noline_3
+  - first:
+      213: -8895927921360415907
+    second: spritesheet_cauldronsplash_noline_4
+  - first:
+      213: -6808850288365272231
+    second: spritesheet_cauldronsplash_noline_5
+  - first:
+      213: 1681909537353298284
+    second: spritesheet_cauldronsplash_noline_6
+  - first:
+      213: 2659384619408056633
+    second: spritesheet_cauldronsplash_noline_7
+  - first:
+      213: -6504379553807848493
+    second: spritesheet_cauldronsplash_noline_8
+  - first:
+      213: -637767863145289087
+    second: spritesheet_cauldronsplash_noline_9
+  - first:
+      213: -6845114806498194293
+    second: spritesheet_cauldronsplash_noline_10
+  - first:
+      213: -4196575962764790877
+    second: spritesheet_cauldronsplash_noline_11
+  - first:
+      213: 4020628723578896788
+    second: spritesheet_cauldronsplash_noline_12
+  - first:
+      213: 9183233312052332583
+    second: spritesheet_cauldronsplash_noline_13
+  - first:
+      213: 3969436428755242169
+    second: spritesheet_cauldronsplash_noline_14
+  - first:
+      213: 3291245714276492599
+    second: spritesheet_cauldronsplash_noline_15
+  - first:
+      213: -4783987426201517981
+    second: spritesheet_cauldronsplash_noline_16
+  - first:
+      213: -3979833980118186768
+    second: spritesheet_cauldronsplash_noline_17
+  - first:
+      213: 4606879223508393997
+    second: spritesheet_cauldronsplash_noline_18
+  - first:
+      213: 3610455134961003794
+    second: spritesheet_cauldronsplash_noline_19
+  - first:
+      213: -7089624132227347469
+    second: spritesheet_cauldronsplash_noline_20
+  - first:
+      213: 6264196674872469494
+    second: spritesheet_cauldronsplash_noline_21
+  - first:
+      213: 4404837369306216838
+    second: spritesheet_cauldronsplash_noline_22
+  - first:
+      213: 1372840326286479744
+    second: spritesheet_cauldronsplash_noline_23
+  - first:
+      213: 3325153216827395592
+    second: spritesheet_cauldronsplash_noline_24
+  - first:
+      213: 2833391626908730605
+    second: spritesheet_cauldronsplash_noline_25
+  - first:
+      213: 1300010357413004636
+    second: spritesheet_cauldronsplash_noline_26
+  - first:
+      213: 7363073851616269255
+    second: spritesheet_cauldronsplash_noline_27
+  - first:
+      213: -3257873494146449768
+    second: spritesheet_cauldronsplash_noline_28
+  - first:
+      213: 1482633385871411018
+    second: spritesheet_cauldronsplash_noline_29
+  - first:
+      213: 2211006187516579424
+    second: spritesheet_cauldronsplash_noline_30
+  - first:
+      213: 7769235046381221336
+    second: spritesheet_cauldronsplash_noline_31
+  - first:
+      213: -204468037099158248
+    second: spritesheet_cauldronsplash_noline_32
+  - first:
+      213: -6568082521703584938
+    second: spritesheet_cauldronsplash_noline_33
+  - first:
+      213: -1729727872265927312
+    second: spritesheet_cauldronsplash_noline_34
+  - first:
+      213: 4291626984527448071
+    second: spritesheet_cauldronsplash_noline_35
+  - first:
+      213: 7716654361796502243
+    second: spritesheet_cauldronsplash_noline_36
+  - first:
+      213: -8960865242286281845
+    second: spritesheet_cauldronsplash_noline_37
+  - first:
+      213: -4851246831017284380
+    second: spritesheet_cauldronsplash_noline_38
+  - first:
+      213: -5341871992282964507
+    second: spritesheet_cauldronsplash_noline_39
+  - first:
+      213: 1280836478991214985
+    second: spritesheet_cauldronsplash_noline_40
+  - first:
+      213: -8412691211459602458
+    second: spritesheet_cauldronsplash_noline_41
+  - first:
+      213: 968103382841022976
+    second: spritesheet_cauldronsplash_noline_42
+  - first:
+      213: -7687636168895947064
+    second: spritesheet_cauldronsplash_noline_43
+  - first:
+      213: 4156929041405974137
+    second: spritesheet_cauldronsplash_noline_44
+  - first:
+      213: -5016092367091144661
+    second: spritesheet_cauldronsplash_noline_45
+  - first:
+      213: 8406767155807104256
+    second: spritesheet_cauldronsplash_noline_46
+  - first:
+      213: -8598254928907019914
+    second: spritesheet_cauldronsplash_noline_47
+  - first:
+      213: -5849985944820234429
+    second: spritesheet_cauldronsplash_noline_48
+  - first:
+      213: -2449226201707740889
+    second: spritesheet_cauldronsplash_noline_49
+  - first:
+      213: 6456489628033516553
+    second: spritesheet_cauldronsplash_noline_50
+  - first:
+      213: -7334467634150682962
+    second: spritesheet_cauldronsplash_noline_51
+  - first:
+      213: 2745456577631726276
+    second: spritesheet_cauldronsplash_noline_52
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spritesheet_cauldronsplash_noline_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 389
+        width: 512
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc885a496cec64960800000000000000
+      internalID: 7585977974644902091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_cauldronsplash_noline_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 389
+        width: 512
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cd58a4eacffbf6b0800000000000000
+      internalID: -5261330492767576631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_cauldronsplash_noline_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 389
+        width: 512
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19b3d3b894f02a3e0800000000000000
+      internalID: -2044054472329708655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_cauldronsplash_noline_3
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 389
+        width: 512
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e210a93b05b4a1260800000000000000
+      internalID: 7069045375094096174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_cauldronsplash_noline_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 195
+        width: 512
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5355db20b05b8480800000000000000
+      internalID: -8895927921360415907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_cauldronsplash_noline_5
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 195
+        width: 512
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9530c21dcba1281a0800000000000000
+      internalID: -6808850288365272231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_cauldronsplash_noline_6
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 195
+        width: 512
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c61f84620d7575710800000000000000
+      internalID: 1681909537353298284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_cauldronsplash_noline_7
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 195
+        width: 512
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93164f8a83808e420800000000000000
+      internalID: 2659384619408056633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_cauldronsplash_noline_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 512
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3db28fae14dcbb5a0800000000000000
+      internalID: -6504379553807848493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_cauldronsplash_noline_9
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1
+        width: 512
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18aa01ce1813627f0800000000000000
+      internalID: -637767863145289087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_cauldronsplash_noline_10
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1
+        width: 512
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8c88e7b9544101a0800000000000000
+      internalID: -6845114806498194293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_cauldronsplash_noline_11
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1
+        width: 512
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a336727564c2c5c0800000000000000
+      internalID: -4196575962764790877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 430a34b047f91d9419a14e6e44c4c1a0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      spritesheet_cauldronsplash_noline_0: 7585977974644902091
+      spritesheet_cauldronsplash_noline_1: -5261330492767576631
+      spritesheet_cauldronsplash_noline_10: -6845114806498194293
+      spritesheet_cauldronsplash_noline_11: -4196575962764790877
+      spritesheet_cauldronsplash_noline_2: -2044054472329708655
+      spritesheet_cauldronsplash_noline_3: 7069045375094096174
+      spritesheet_cauldronsplash_noline_4: -8895927921360415907
+      spritesheet_cauldronsplash_noline_5: -6808850288365272231
+      spritesheet_cauldronsplash_noline_6: 1681909537353298284
+      spritesheet_cauldronsplash_noline_7: 2659384619408056633
+      spritesheet_cauldronsplash_noline_8: -6504379553807848493
+      spritesheet_cauldronsplash_noline_9: -637767863145289087
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
