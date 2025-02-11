@@ -110,7 +110,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -2194936791895643615, guid: 52c26eed75fae3f4ab962ac4ca26495a, type: 3}
+  m_Sprite: {fileID: 7111694896840819778, guid: 3f8e19ad6b9cf89438a99bd7fed33a10, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowingRune: {fileID: 1281583540013899364}
-  rune: 0
+  rune: 1
   fadeInSpeed: 1.5
 --- !u!1 &2076764331792232211
 GameObject:
@@ -357,7 +357,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -6.31, y: 2.37, z: 0}
-  m_LocalScale: {x: 0.52587706, y: 0.52587706, z: 0.52587706}
+  m_LocalScale: {x: 0.4793948, y: 0.4793948, z: 0.4793948}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4760622308434497438}
@@ -431,7 +431,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowingRune: {fileID: 7922935415581058430}
-  rune: 0
+  rune: 2
   fadeInSpeed: 1.5
 --- !u!1 &6245522735174024518
 GameObject:
