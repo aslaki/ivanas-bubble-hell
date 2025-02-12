@@ -609,7 +609,27 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      baba_tausta_tummennus_katonraja_0: -5877748181618877586
+      baba_tausta_tummennus_katonraja_1: -5998038295499164168
+      baba_tausta_tummennus_katonraja_10: -6780573142757847575
+      baba_tausta_tummennus_katonraja_11: 2312388032967971185
+      baba_tausta_tummennus_katonraja_12: -1823703005262115452
+      baba_tausta_tummennus_katonraja_13: -429117741409573693
+      baba_tausta_tummennus_katonraja_14: -574081758368905448
+      baba_tausta_tummennus_katonraja_15: 1815238227886261161
+      baba_tausta_tummennus_katonraja_16: -3741411698426204408
+      baba_tausta_tummennus_katonraja_17: -535199560719384888
+      baba_tausta_tummennus_katonraja_18: -7537560019025552028
+      baba_tausta_tummennus_katonraja_19: 3274716971966151279
+      baba_tausta_tummennus_katonraja_2: 3618057508808482814
+      baba_tausta_tummennus_katonraja_3: 1705223464199362311
+      baba_tausta_tummennus_katonraja_4: -3221308529182322350
+      baba_tausta_tummennus_katonraja_5: -8935137086054485752
+      baba_tausta_tummennus_katonraja_6: -7641749883598633598
+      baba_tausta_tummennus_katonraja_7: -1260313767935815696
+      baba_tausta_tummennus_katonraja_8: 5494660864303092327
+      baba_tausta_tummennus_katonraja_9: 390815935661578018
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
